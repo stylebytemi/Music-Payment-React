@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="signin.css" />
+    <title>SignIn</title>
+  </head>
+  <body>
+    <div class="containerdiv">
+      <div class="flex1">
+        <div class="welcome">
+          <div class="pad">
+            <h2>WELCOME BACK</h2>
+            <p>Please enter your details</p>
+          </div>
+          <form action="">
+            <div class="marg">
+              <label for="text">Username</label><br />
+              <input type="text" name="username" id="username" required />
+            </div>
+            <div class="marg">
+              <label for="password">Password</label><br />
+              <input id="password" type="password" name="password" required />
+              <i class="bi bi-eye-slash" id="togglePassword"></i>
+            </div>
+            <div class="marg" id="cb">
+              <div>
+                <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+                <label id="myLabel" for="rememberMe">Remember me</label>
+              </div>
+              <a id="fg" href="">Forgot Password?</a>
+            </div>
+            <div class="marg">
+              <input
+                id="click"
+                type="submit"
+                value="LOGIN"
+                onclick="lsRememberMe()"
+              />
+            </div>
+            <div id="para1">
+              <p>Don't have an account? <a id="span1" href="">Sign Up</a></p>
+            </div>
+          </form>
+        </div>
+        <div class="imgdiv">
+          <img src="./signin_aside-image.png" alt="signinimage" />
+        </div>
+      </div>
+    </div>
+    <script src="signin.js"></script>
+  </body>
+</html>
